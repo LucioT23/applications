@@ -4,20 +4,1119 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goose & You - Jeu Érotique pour Couples</title>
-  <link rel="stylesheet" href="_next/static/css/41b46e1d6bce7044.css">
+  <style>
+    :root {
+      --background: #0a1929;
+      --foreground: #ffffff;
+      --primary: #e9c46a;
+      --primary-hover: #f1c75f;
+      --secondary: #2a6f97;
+      --accent-red: #e76f51;
+      --accent-blue: #2a9df4;
+      --accent-yellow: #e9c46a;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        'Helvetica Neue', Arial, sans-serif;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    
+    .flex {
+      display: flex;
+    }
+    
+    .flex-col {
+      flex-direction: column;
+    }
+    
+    .items-center {
+      align-items: center;
+    }
+    
+    .justify-center {
+      justify-content: center;
+    }
+    
+    .justify-between {
+      justify-content: space-between;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .gap-2 {
+      gap: 0.5rem;
+    }
+    
+    .gap-4 {
+      gap: 1rem;
+    }
+    
+    .gap-8 {
+      gap: 2rem;
+    }
+    
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+    
+    .mt-4 {
+      margin-top: 1rem;
+    }
+    
+    .mt-8 {
+      margin-top: 2rem;
+    }
+    
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+    
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+    
+    .p-2 {
+      padding: 0.5rem;
+    }
+    
+    .p-4 {
+      padding: 1rem;
+    }
+    
+    .p-6 {
+      padding: 1.5rem;
+    }
+    
+    .p-8 {
+      padding: 2rem;
+    }
+    
+    .rounded {
+      border-radius: 0.25rem;
+    }
+    
+    .rounded-lg {
+      border-radius: 0.5rem;
+    }
+    
+    .rounded-full {
+      border-radius: 9999px;
+    }
+    
+    .bg-gray-800 {
+      background-color: rgba(31, 41, 55, 0.3);
+    }
+    
+    .text-primary {
+      color: var(--primary);
+    }
+    
+    .text-xl {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+    
+    .text-2xl {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    
+    .text-3xl {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+    
+    .text-4xl {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+    
+    .text-5xl {
+      font-size: 3rem;
+      line-height: 1;
+    }
+    
+    .font-bold {
+      font-weight: 700;
+    }
+    
+    .font-semibold {
+      font-weight: 600;
+    }
+    
+    .italic {
+      font-style: italic;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--primary);
+      color: var(--background);
+      border: none;
+      border-radius: 0.25rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .btn:hover {
+      background-color: var(--primary-hover);
+    }
+    
+    .btn-lg {
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      border: 1px solid var(--foreground);
+      color: var(--foreground);
+    }
+    
+    .btn-outline:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .w-full {
+      width: 100%;
+    }
+    
+    .grid {
+      display: grid;
+    }
+    
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    
+    @media (min-width: 768px) {
+      .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      
+      .md\:col-span-2 {
+        grid-column: span 2 / span 2;
+      }
+    }
+    
+    .space-y-2 > * + * {
+      margin-top: 0.5rem;
+    }
+    
+    .space-y-4 > * + * {
+      margin-top: 1rem;
+    }
+    
+    .space-y-6 > * + * {
+      margin-top: 1.5rem;
+    }
+    
+    .space-x-2 > * + * {
+      margin-left: 0.5rem;
+    }
+    
+    .space-x-4 > * + * {
+      margin-left: 1rem;
+    }
+    
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 0.25rem;
+      color: var(--foreground);
+    }
+    
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 500;
+    }
+    
+    .tab-button {
+      position: relative;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      background-color: transparent;
+      border: none;
+      color: var(--foreground);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .tab-button.active {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .tab-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 0.5rem;
+      pointer-events: none;
+    }
+    
+    .tab-button.tab-1::before {
+      border: 2px solid #4ade80;
+    }
+    
+    .tab-button.tab-2::before {
+      border: 2px solid #3b82f6;
+    }
+    
+    .tab-button.tab-3::before {
+      border: 2px solid #f59e0b;
+    }
+    
+    .tab-button.tab-4::before {
+      border: 2px solid #ec4899;
+    }
+    
+    .tab-index {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    
+    .tab-1 .tab-index {
+      background-color: #4ade80;
+      color: #0a1929;
+    }
+    
+    .tab-2 .tab-index {
+      background-color: #3b82f6;
+      color: #ffffff;
+    }
+    
+    .tab-3 .tab-index {
+      background-color: #f59e0b;
+      color: #0a1929;
+    }
+    
+    .tab-4 .tab-index {
+      background-color: #ec4899;
+      color: #ffffff;
+    }
+    
+    .game-board {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 1;
+      margin: 0 auto;
+    }
+    
+    .game-cell {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    .game-cell:hover {
+      transform: scale(1.1);
+    }
+    
+    .cell-yellow {
+      background-color: var(--accent-yellow);
+      color: var(--background);
+    }
+    
+    .cell-red {
+      background-color: var(--accent-red);
+      color: var(--foreground);
+    }
+    
+    .cell-blue {
+      background-color: var(--accent-blue);
+      color: var(--foreground);
+    }
+    
+    .cell-gray {
+      background-color: #4a5568;
+      color: var(--foreground);
+    }
+    
+    .dice {
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--background);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .dice:hover {
+      transform: rotate(15deg);
+    }
+    
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .tag-yellow {
+      background-color: rgba(233, 196, 106, 0.2);
+      border: 1px solid var(--accent-yellow);
+    }
+    
+    .tag-blue {
+      background-color: rgba(42, 157, 244, 0.2);
+      border: 1px solid var(--accent-blue);
+    }
+    
+    .tag-red {
+      background-color: rgba(231, 111, 81, 0.2);
+      border: 1px solid var(--accent-red);
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+    .flex-1 {
+      flex: 1;
+    }
+    
+    footer {
+      margin-top: auto;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .screen {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #home-screen {
+      display: flex;
+    }
+    
+    #game-screen {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <main class="flex min-h-screen flex-col items-center justify-center bg-[#0a1929] text-white">
+  <!-- Écran d'accueil -->
+  <div id="home-screen" class="screen">
     <div class="flex flex-col items-center justify-center gap-8 p-4 text-center">
-      <h1 class="text-5xl font-bold text-[#e9c46a]">Goose & You</h1>
+      <h1 class="text-5xl font-bold text-primary">Goose & You</h1>
       <h2 class="text-2xl">Jeu Érotique pour Couples</h2>
       
-      <a href="game.html" class="mt-8">
-        <button class="bg-[#e9c46a] text-[#0a1929] hover:bg-[#f1c75f] px-8 py-6 text-xl font-semibold rounded-md">
-          Commencer l'Aventure
-        </button>
-      </a>
+      <button id="start-button" class="btn btn-lg mt-8">
+        Commencer l'Aventure
+      </button>
     </div>
-  </main>
+  </div>
+  
+  <!-- Écran de jeu -->
+  <div id="game-screen" class="screen">
+    <div class="container">
+      <div class="mb-8 text-center">
+        <h1 class="text-4xl font-bold text-primary">Goose & You</h1>
+        <p class="text-xl italic">Explorez, jouez, partagez...</p>
+      </div>
+
+      <div class="flex justify-center space-x-2 mb-8">
+        <button class="tab-button tab-1 active" data-tab="game">
+          Jeu
+          <span class="tab-index">1</span>
+        </button>
+        <button class="tab-button tab-2" data-tab="settings">
+          Paramètres
+          <span class="tab-index">2</span>
+        </button>
+        <button class="tab-button tab-3" data-tab="journal">
+          Journal
+          <span class="tab-index">3</span>
+        </button>
+        <button class="tab-button tab-4" data-tab="about">
+          À Propos
+          <span class="tab-index">4</span>
+        </button>
+      </div>
+
+      <!-- Contenu de l'onglet Jeu -->
+      <div id="game-tab" class="tab-content">
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="flex-1">
+            <div class="flex justify-between mb-4">
+              <div>
+                <p>Tour: <span id="current-turn">1</span></p>
+                <p>Joueur actuel: <span id="current-player">1</span></p>
+              </div>
+              <div>
+                <p>Niveau d'intimité: <span id="intimacy-level-display">Doux</span></p>
+              </div>
+            </div>
+
+            <div class="game-board relative">
+              <!-- Cercle extérieur -->
+              <div class="absolute inset-0 rounded-full border-2 border-gray-600 opacity-30"></div>
+              
+              <!-- Cellules du jeu - générées par JavaScript -->
+              <div id="game-cells"></div>
+              
+              <!-- Dé au centre -->
+              <div 
+                id="dice"
+                class="dice absolute"
+                style="left: 50%; top: 50%; transform: translate(-50%, -50%)"
+              >
+                ?
+              </div>
+            </div>
+            
+            <div class="flex justify-center mt-4 space-x-4">
+              <button id="restart-button" class="btn btn-outline">
+                Recommencer
+              </button>
+              <button id="save-button" class="btn btn-outline">
+                Sauvegarder
+              </button>
+            </div>
+          </div>
+          
+          <div class="flex-1 bg-gray-800 p-6 rounded-lg">
+            <div id="challenge-container" class="hidden">
+              <h2 class="text-2xl font-bold mb-4">Prêt à relever le défi ?</h2>
+              <p id="challenge-text" class="text-xl mb-6"></p>
+              <button id="next-turn-button" class="btn w-full">
+                Défi relevé, au tour suivant !
+              </button>
+            </div>
+            
+            <div id="ready-container">
+              <h2 class="text-2xl font-bold mb-4">Prêt à jouer ?</h2>
+              <p class="mb-6">
+                Lancez le dé pour commencer l'aventure.<br />
+                Chaque case vous réservera une surprise...
+              </p>
+              
+              <h3 class="text-xl font-semibold mt-8 mb-2">Derniers défis :</h3>
+              <p id="challenge-history" class="text-gray-400 italic">L'historique des défis apparaîtra ici...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenu de l'onglet Paramètres -->
+      <div id="settings-tab" class="tab-content hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h2 class="text-2xl font-bold mb-6">Paramètres du Jeu</h2>
+            
+            <div class="space-y-6">
+              <div>
+                <label for="intimacy-level">Niveau d'intimité</label>
+                <select id="intimacy-level">
+                  <option value="Doux">Doux</option>
+                  <option value="Passionné">Passionné</option>
+                  <option value="Audacieux">Audacieux</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="player1">Noms des Joueurs</label>
+                <input id="player1" placeholder="Joueur 1" class="mb-2" />
+                <input id="player2" placeholder="Joueur 2" />
+              </div>
+              
+              <div>
+                <label for="game-duration">Durée de jeu</label>
+                <select id="game-duration">
+                  <option value="short">Court (15 minutes)</option>
+                  <option value="medium" selected>Moyen (30 minutes)</option>
+                  <option value="long">Long (60 minutes)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h2 class="text-2xl font-bold mb-6">Ambiance</h2>
+            
+            <div class="space-y-6">
+              <div>
+                <label for="visual-theme">Thème visuel</label>
+                <select id="visual-theme">
+                  <option value="night" selected>Nuit étoilée</option>
+                  <option value="sunset">Coucher de soleil</option>
+                  <option value="fantasy">Fantaisie</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="ambient-sounds">Sons d'ambiance</label>
+                <select id="ambient-sounds">
+                  <option value="none" selected>Aucun</option>
+                  <option value="nature">Nature</option>
+                  <option value="rain">Pluie douce</option>
+                  <option value="jazz">Jazz lounge</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="preferences">Préférences et limites</label>
+                <textarea 
+                  id="preferences" 
+                  placeholder="Notez ici vos préférences et limites..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          
+          <div class="md:col-span-2 bg-gray-800 p-6 rounded-lg">
+            <h2 class="text-2xl font-bold mb-6">Choix des verbes d'action par niveau</h2>
+            
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-primary mb-2">Doux</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="tag tag-yellow">baiser</span>
+                <span class="tag tag-yellow">caresser</span>
+                <span class="tag tag-yellow">masser</span>
+                <span class="tag tag-yellow">effleurer</span>
+                <span class="tag tag-yellow">embrasser</span>
+                <span class="tag tag-yellow">tracer</span>
+                <span class="tag tag-yellow">frôler</span>
+                <span class="tag tag-yellow">prendre soin</span>
+                <span class="tag tag-yellow">souffler</span>
+                <span class="tag tag-yellow">réchauffer</span>
+              </div>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-accent-blue mb-2">Passionné</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="tag tag-blue">lécher</span>
+                <span class="tag tag-blue">sucer</span>
+                <span class="tag tag-blue">masser</span>
+                <span class="tag tag-blue">embrasser</span>
+                <span class="tag tag-blue">pénétrer partiellement</span>
+                <span class="tag tag-blue">stimuler</span>
+                <span class="tag tag-blue">explorer</span>
+                <span class="tag tag-blue">taquiner</span>
+                <span class="tag tag-blue">glisser</span>
+                <span class="tag tag-blue">titiller</span>
+              </div>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-semibold text-accent-red mb-2">Audacieux</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="tag tag-red">pénétrer</span>
+                <span class="tag tag-red">pénétrer oralement</span>
+                <span class="tag tag-red">dominer</span>
+                <span class="tag tag-red">se donner sans retenue</span>
+                <span class="tag tag-red">jouir ensemble</span>
+                <span class="tag tag-red">enchaîner</span>
+                <span class="tag tag-red">baiser fort</span>
+                <span class="tag tag-red">provoquer</span>
+                <span class="tag tag-red">chuchoter des ordres</span>
+                <span class="tag tag-red">jouer avec la limite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenu de l'onglet Journal -->
+      <div id="journal-tab" class="tab-content hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">Journal Intime</h2>
+            <p class="text-gray-400 italic mb-4">Votre journal est vide pour le moment...</p>
+            
+            <textarea 
+              id="journal-entry"
+              placeholder="Notez ici un souvenir, une sensation, un désir..."
+              class="mb-4"
+            ></textarea>
+            
+            <button id="add-journal-button" class="btn w-full">
+              Ajouter au journal
+            </button>
+          </div>
+          
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">Fantaisies Partagées</h2>
+            
+            <div class="space-y-4 mb-6">
+              <div>
+                <label for="fantasy-title">Titre</label>
+                <input id="fantasy-title" placeholder="Donnez un titre à votre fantaisie..." />
+              </div>
+              
+              <div>
+                <label for="fantasy-description">Description</label>
+                <textarea 
+                  id="fantasy-description" 
+                  placeholder="Décrivez votre fantaisie..."
+                ></textarea>
+              </div>
+              
+              <div>
+                <label for="fantasy-intensity">Intensité</label>
+                <select id="fantasy-intensity">
+                  <option value="light" selected>Légère</option>
+                  <option value="moderate">Modérée</option>
+                  <option value="intense">Intense</option>
+                </select>
+              </div>
+            </div>
+            
+            <button id="add-fantasy-button" class="btn w-full mb-6">
+              Ajouter à la liste
+            </button>
+            
+            <h3 class="text-xl font-semibold mb-2">Vos fantaisies</h3>
+            <p id="fantasy-list" class="text-gray-400 italic">Aucune fantaisie partagée pour le moment...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenu de l'onglet À Propos -->
+      <div id="about-tab" class="tab-content hidden">
+        <div class="bg-gray-800 p-8 rounded-lg max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold text-center text-primary mb-8">À Propos de Goose & You</h2>
+          
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Concept</h3>
+              <p>
+                Goose & You est une réinvention moderne et sensuelle du traditionnel jeu de l'Oie. Conçu exclusivement pour les couples, ce jeu offre un espace ludique pour explorer l'intimité, renforcer la complicité et découvrir de nouvelles dimensions dans votre relation.
+              </p>
+            </div>
+            
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Comment jouer</h3>
+              <ol class="space-y-2 pl-4">
+                <li>1. Choisissez vos paramètres et niveau d'intimité dans l'onglet Paramètres</li>
+                <li>2. À tour de rôle, lancez le dé pour avancer sur le plateau</li>
+                <li>3. Relevez les défis proposés par les cases où vous atterrissez</li>
+                <li>4. Utilisez le journal pour noter vos moments préférés et vos fantaisies</li>
+                <li>5. L'objectif n'est pas d'arriver premier, mais de profiter du voyage ensemble !</li>
+              </ol>
+            </div>
+            
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Types de cases</h3>
+              <ul class="space-y-2">
+                <li class="flex items-center">
+                  <span class="w-4 h-4 rounded-full bg-accent-yellow mr-2"></span>
+                  <span><strong>Plumes Dorées :</strong> Moments de douceur et de tendresse</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="w-4 h-4 rounded-full bg-accent-red mr-2"></span>
+                  <span><strong>Éclairs Rouges :</strong> Défis plus intenses et passionnés</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="w-4 h-4 rounded-full bg-accent-blue mr-2"></span>
+                  <span><strong>Cœurs Bleus :</strong> Moments d'échange émotionnel et de connexion</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="w-4 h-4 rounded-full bg-gray-500 mr-2"></span>
+                  <span><strong>Cases Neutres :</strong> Diverses surprises et mini-jeux</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Confidentialité</h3>
+              <p>
+                Goose & You respecte totalement votre vie privée. Toutes vos données sont stockées localement sur votre appareil. Aucune information n'est partagée ou enregistrée sur un serveur externe.
+              </p>
+            </div>
+          </div>
+          
+          <div class="text-center mt-12 text-sm text-gray-400">
+            <p>Goose & You - Conçu pour raviver la flamme et explorer ensemble</p>
+            <p>Application totalement gratuite et privée</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <a href="https://github.com/LucioT23" target="_blank" class="flex items-center justify-center">
+        <span class="mr-1">Créé avec</span>
+        <span class="font-semibold">Genspark</span>
+      </a>
+    </footer>
+  </div>
+  
+  <script>
+    // Variables globales
+    let currentTurn = 1;
+    let currentPlayer = 1;
+    let intimacyLevel = 'Doux';
+    let diceValue = null;
+    let challengeHistory = [];
+    
+    // Éléments DOM
+    const homeScreen = document.getElementById('home-screen');
+    const gameScreen = document.getElementById('game-screen');
+    const startButton = document.getElementById('start-button');
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const dice = document.getElementById('dice');
+    const currentTurnDisplay = document.getElementById('current-turn');
+    const currentPlayerDisplay = document.getElementById('current-player');
+    const intimacyLevelDisplay = document.getElementById('intimacy-level-display');
+    const intimacyLevelSelect = document.getElementById('intimacy-level');
+    const challengeContainer = document.getElementById('challenge-container');
+    const readyContainer = document.getElementById('ready-container');
+    const challengeText = document.getElementById('challenge-text');
+    const challengeHistoryDisplay = document.getElementById('challenge-history');
+    const nextTurnButton = document.getElementById('next-turn-button');
+    const restartButton = document.getElementById('restart-button');
+    const gameCellsContainer = document.getElementById('game-cells');
+    const addJournalButton = document.getElementById('add-journal-button');
+    const journalEntry = document.getElementById('journal-entry');
+    const addFantasyButton = document.getElementById('add-fantasy-button');
+    const fantasyTitle = document.getElementById('fantasy-title');
+    const fantasyDescription = document.getElementById('fantasy-description');
+    const fantasyIntensity = document.getElementById('fantasy-intensity');
+    const fantasyList = document.getElementById('fantasy-list');
+    
+    // Initialisation
+    function init() {
+      // Événements
+      startButton.addEventListener('click', startGame);
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => switchTab(button.dataset.tab));
+      });
+      dice.addEventListener('click', rollDice);
+      nextTurnButton.addEventListener('click', nextTurn);
+      restartButton.addEventListener('click', restartGame);
+      intimacyLevelSelect.addEventListener('change', updateIntimacyLevel);
+      addJournalButton.addEventListener('click', addJournalEntry);
+      addFantasyButton.addEventListener('click', addFantasy);
+      
+      // Générer les cellules du jeu
+      generateGameCells();
+    }
+    
+    // Démarrer le jeu
+    function startGame() {
+      homeScreen.style.display = 'none';
+      gameScreen.style.display = 'flex';
+    }
+    
+    // Changer d'onglet
+    function switchTab(tabId) {
+      tabButtons.forEach(button => {
+        if (button.dataset.tab === tabId) {
+          button.classList.add('active');
+        } else {
+          button.classList.remove('active');
+        }
+      });
+      
+      tabContents.forEach(content => {
+        if (content.id === `${tabId}-tab`) {
+          content.classList.remove('hidden');
+        } else {
+          content.classList.add('hidden');
+        }
+      });
+    }
+    
+    // Générer les cellules du jeu
+    function generateGameCells() {
+      for (let i = 1; i <= 63; i++) {
+        const angle = (i * (360 / 63)) * (Math.PI / 180);
+        const radius = 45; // % du conteneur
+        const centerX = 50; // % du conteneur
+        const centerY = 50; // % du conteneur
+        
+        const x = centerX + radius * Math.cos(angle);
+        const y = centerY + radius * Math.sin(angle);
+        
+        // Déterminer la couleur de la cellule
+        let cellClass = '';
+        if (i % 9 === 0) {
+          cellClass = 'cell-yellow';
+        } else if (i % 7 === 0) {
+          cellClass = 'cell-red';
+        } else if (i % 5 === 0) {
+          cellClass = 'cell-blue';
+        } else {
+          cellClass = 'cell-gray';
+        }
+        
+        const cell = document.createElement('div');
+        cell.className = `game-cell ${cellClass}`;
+        cell.style.left = `${x}%`;
+        cell.style.top = `${y}%`;
+        cell.style.transform = 'translate(-50%, -50%)';
+        cell.textContent = i;
+        
+        gameCellsContainer.appendChild(cell);
+      }
+    }
+    
+    // Lancer le dé
+    function rollDice() {
+      const newValue = Math.floor(Math.random() * 6) + 1;
+      diceValue = newValue;
+      dice.textContent = diceValue;
+      
+      showChallenge();
+    }
+    
+    // Afficher un défi
+    function showChallenge() {
+      const challenge = generateChallenge(intimacyLevel);
+      challengeText.textContent = challenge;
+      challengeContainer.classList.remove('hidden');
+      readyContainer.classList.add('hidden');
+      
+      // Ajouter à l'historique
+      challengeHistory.unshift(`Tour ${currentTurn}, Joueur ${currentPlayer}: ${challenge}`);
+      if (challengeHistory.length > 5) {
+        challengeHistory.pop();
+      }
+      updateChallengeHistory();
+    }
+    
+    // Mettre à jour l'affichage de l'historique des défis
+    function updateChallengeHistory() {
+      if (challengeHistory.length > 0) {
+        challengeHistoryDisplay.innerHTML = challengeHistory.join('<br><br>');
+      } else {
+        challengeHistoryDisplay.textContent = "L'historique des défis apparaîtra ici...";
+      }
+    }
+    
+    // Générer un défi aléatoire
+    function generateChallenge(level) {
+      const challenges = {
+        'Doux': [
+          'Embrassez votre partenaire tendrement pendant 30 secondes',
+          'Caressez le visage de votre partenaire et dites-lui ce que vous aimez chez lui/elle',
+          'Massez les épaules de votre partenaire pendant une minute',
+          'Effleurez le bras de votre partenaire du bout des doigts',
+          'Prenez soin de votre partenaire en lui servant une boisson',
+        ],
+        'Passionné': [
+          'Embrassez le cou de votre partenaire',
+          'Massez le dos de votre partenaire en descendant progressivement',
+          'Léchez délicatement l\'oreille de votre partenaire',
+          'Stimulez votre partenaire à travers ses vêtements',
+          'Explorez le corps de votre partenaire avec votre bouche',
+        ],
+        'Audacieux': [
+          'Dominez votre partenaire en lui tenant les mains au-dessus de la tête',
+          'Donnez-vous sans retenue pendant 2 minutes',
+          'Chuchotez à l\'oreille de votre partenaire ce que vous aimeriez lui faire',
+          'Provoquez votre partenaire en vous déshabillant lentement',
+          'Jouez avec la limite du plaisir de votre partenaire',
+        ]
+      };
+      
+      const levelChallenges = challenges[level] || challenges['Doux'];
+      return levelChallenges[Math.floor(Math.random() * levelChallenges.length)];
+    }
+    
+    // Passer au tour suivant
+    function nextTurn() {
+      currentPlayer = currentPlayer === 1 ? 2 : 1;
+      currentTurn++;
+      currentTurnDisplay.textContent = currentTurn;
+      currentPlayerDisplay.textContent = currentPlayer;
+      
+      challengeContainer.classList.add('hidden');
+      readyContainer.classList.remove('hidden');
+      dice.textContent = '?';
+    }
+    
+    // Redémarrer le jeu
+    function restartGame() {
+      currentTurn = 1;
+      currentPlayer = 1;
+      diceValue = null;
+      challengeHistory = [];
+      
+      currentTurnDisplay.textContent = currentTurn;
+      currentPlayerDisplay.textContent = currentPlayer;
+      dice.textContent = '?';
+      
+      challengeContainer.classList.add('hidden');
+      readyContainer.classList.remove('hidden');
+      updateChallengeHistory();
+    }
+    
+    // Mettre à jour le niveau d'intimité
+    function updateIntimacyLevel() {
+      intimacyLevel = intimacyLevelSelect.value;
+      intimacyLevelDisplay.textContent = intimacyLevel;
+    }
+    
+    // Ajouter une entrée au journal
+    function addJournalEntry() {
+      if (journalEntry.value.trim() === '') return;
+      
+      const journalContainer = journalEntry.parentElement;
+      const entriesContainer = document.createElement('div');
+      entriesContainer.className = 'mt-4 space-y-4';
+      
+      if (journalContainer.querySelector('.text-gray-400')) {
+        journalContainer.querySelector('.text-gray-400').remove();
+      }
+      
+      if (!journalContainer.querySelector('.journal-entries')) {
+        journalContainer.insertBefore(entriesContainer, journalEntry);
+        entriesContainer.className = 'journal-entries mt-4 space-y-4';
+      }
+      
+      const entryElement = document.createElement('div');
+      entryElement.className = 'p-4 bg-gray-700 bg-opacity-30 rounded';
+      
+      const date = new Date();
+      const dateStr = date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+      
+      entryElement.innerHTML = `
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-sm text-gray-400">${dateStr}</span>
+          <button class="text-sm text-red-400 delete-entry">Supprimer</button>
+        </div>
+        <p>${journalEntry.value}</p>
+      `;
+      
+      journalContainer.querySelector('.journal-entries').appendChild(entryElement);
+      journalEntry.value = '';
+      
+      // Ajouter l'événement de suppression
+      entryElement.querySelector('.delete-entry').addEventListener('click', function() {
+        entryElement.remove();
+        if (journalContainer.querySelector('.journal-entries').children.length === 0) {
+          journalContainer.querySelector('.journal-entries').remove();
+          const emptyMessage = document.createElement('p');
+          emptyMessage.className = 'text-gray-400 italic mb-4';
+          emptyMessage.textContent = 'Votre journal est vide pour le moment...';
+          journalContainer.insertBefore(emptyMessage, journalEntry);
+        }
+      });
+    }
+    
+    // Ajouter une fantaisie
+    function addFantasy() {
+      if (fantasyTitle.value.trim() === '' || fantasyDescription.value.trim() === '') return;
+      
+      const fantasyContainer = fantasyList.parentElement;
+      const entriesContainer = document.createElement('div');
+      entriesContainer.className = 'mt-4 space-y-4';
+      
+      if (fantasyContainer.querySelector('.text-gray-400')) {
+        fantasyContainer.querySelector('.text-gray-400').remove();
+      }
+      
+      if (!fantasyContainer.querySelector('.fantasy-entries')) {
+        fantasyContainer.insertBefore(entriesContainer, null);
+        entriesContainer.className = 'fantasy-entries mt-4 space-y-4';
+      }
+      
+      const intensityClass = 
+        fantasyIntensity.value === 'light' ? 'bg-yellow-500' :
+        fantasyIntensity.value === 'moderate' ? 'bg-blue-500' : 'bg-red-500';
+      
+      const intensityText = 
+        fantasyIntensity.value === 'light' ? 'Légère' :
+        fantasyIntensity.value === 'moderate' ? 'Modérée' : 'Intense';
+      
+      const fantasyElement = document.createElement('div');
+      fantasyElement.className = 'p-4 bg-gray-700 bg-opacity-30 rounded';
+      
+      fantasyElement.innerHTML = `
+        <div class="flex justify-between items-center mb-2">
+          <h4 class="font-semibold">${fantasyTitle.value}</h4>
+          <span class="px-2 py-1 text-xs rounded ${intensityClass} bg-opacity-20 border border-${intensityClass.replace('bg-', '')}">${intensityText}</span>
+        </div>
+        <p class="mb-2">${fantasyDescription.value}</p>
+        <button class="text-sm text-red-400 delete-fantasy">Supprimer</button>
+      `;
+      
+      fantasyContainer.querySelector('.fantasy-entries').appendChild(fantasyElement);
+      fantasyTitle.value = '';
+      fantasyDescription.value = '';
+      
+      // Ajouter l'événement de suppression
+      fantasyElement.querySelector('.delete-fantasy').addEventListener('click', function() {
+        fantasyElement.remove();
+        if (fantasyContainer.querySelector('.fantasy-entries').children.length === 0) {
+          fantasyContainer.querySelector('.fantasy-entries').remove();
+          fantasyList.textContent = 'Aucune fantaisie partagée pour le moment...';
+        }
+      });
+    }
+    
+    // Initialiser l'application
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
 </body>
 </html>
