@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goose & You - Jeu Érotique pour Couples</title>
-  <script type="text/javascript">
-    // Gestion des routes SPA pour GitHub Pages
-    (function(l) {
-      if (l.search[1] === '/' ) {
-        var decoded = l.search.slice(1).split('&').map(function(s) { 
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-        );
-      }
-    }(window.location))
-  </script>
-  <meta http-equiv="refresh" content="0;URL='/'">
+  <link rel="stylesheet" href="_next/static/css/41b46e1d6bce7044.css">
 </head>
 <body>
-  <h1>Redirection...</h1>
-  <p>Si vous n'êtes pas redirigé automatiquement, <a href="/">cliquez ici</a>.</p>
+  <main class="flex min-h-screen flex-col items-center justify-center bg-[#0a1929] text-white">
+    <div class="flex flex-col items-center justify-center gap-8 p-4 text-center">
+      <h1 class="text-5xl font-bold text-[#e9c46a]">Goose & You</h1>
+      <h2 class="text-2xl">Jeu Érotique pour Couples</h2>
+      
+      <a href="game.html" class="mt-8">
+        <button class="bg-[#e9c46a] text-[#0a1929] hover:bg-[#f1c75f] px-8 py-6 text-xl font-semibold rounded-md">
+          Commencer l'Aventure
+        </button>
+      </a>
+    </div>
+  </main>
 </body>
 </html>
